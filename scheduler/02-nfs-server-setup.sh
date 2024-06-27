@@ -4,7 +4,7 @@ echo "--------------------------------------------------------------------------
 echo "Setting up NFS server"
 echo "------------------------------------------------------------------------------------------------------------------------------"
 yum install -y nfs-utils
-mkdir -p /sched /shared
+mkdir -p /sched /shared/home
 echo "/sched *(rw,sync,no_root_squash)" >> /etc/exports
 echo "/shared *(rw,sync,no_root_squash)" >> /etc/exports
 systemctl start nfs-server.service

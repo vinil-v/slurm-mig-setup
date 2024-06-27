@@ -1,7 +1,6 @@
 #!/bin/sh
 slurm_conf="/sched/slurm.conf"
 sched_dir="/sched"
-echo y | cp  ~/slurm-mig-discovery/gres.conf /sched/gres.conf
 ln -s "$slurm_conf" /etc/slurm/slurm.conf
 ln -s "$sched_dir/cgroup.conf" /etc/slurm/cgroup.conf
 ln -s "$sched_dir/accounting.conf" /etc/slurm/accounting.conf
