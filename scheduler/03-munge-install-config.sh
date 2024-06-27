@@ -1,8 +1,8 @@
 #!/bin/sh
 # Install and configure Munge
 
-munge_key = "/etc/munge/munge.key"
-sched_dir = "/sched"
+munge_key="/etc/munge/munge.key"
+sched_dir="/sched"
 
 echo "------------------------------------------------------------------------------------------------------------------------------"
 echo "Installing and configuring Munge"
