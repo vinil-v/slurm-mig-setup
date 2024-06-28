@@ -1,11 +1,10 @@
 #!/bin/sh
-#!/bin/sh
 #SBATCH --job-name=MLjob
 #SBATCH --partition=gpu
-#SBATCH --ntasks=4
-#SBATCH --gres=gpu:1
+#SBATCH --ntasks=10
+#SBATCH --gres=gpu:1g.11gb:1
 
-export PATH=$PATH:/sched/home/vinil1/anaconda3/bin
-conda activate mlprog
+export PATH=$PATH:/shared/home/vinil/anaconda3/bin/conda
+/shared/home/vinil/anaconda3/bin/conda activate mlprog
 wget https://raw.githubusercontent.com/vinilvadakkepurakkal/basic-gpu-test/main/gputest.py
 python gputest.py
