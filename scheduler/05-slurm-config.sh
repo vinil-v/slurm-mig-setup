@@ -23,6 +23,7 @@ SwitchType=switch/none
 TaskPlugin=task/affinity,task/cgroup
 SchedulerType=sched/backfill
 SelectType=select/cons_tres
+SelectTypeParameters=CR_Core
 GresTypes=gpu
 SelectTypeParameters=CR_Core_Memory
 # We use a "safe" form of the CycleCloud cluster_name throughout slurm.
